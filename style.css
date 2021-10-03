@@ -49,6 +49,7 @@
     -ms-word-break: normal;
     word-break: normal;
     border-radius: 20px;
+    cursor: pointer;
 }
 table{
     padding: 20px 40px;
@@ -65,6 +66,7 @@ table{
 }
 .heads{
     padding: 5px 5px;
+    font-size: 15px;
 }
 .heads input{
     padding: 10px 20px;
@@ -110,7 +112,7 @@ table{
 .content-btn{
     position: absolute;
     top: 90%;
-    left: 57.7%;
+    left: 57.2%;
     margin-top: 3rem;
     color: white;
 }
@@ -127,6 +129,8 @@ table{
 .ans-area{
     float: right;
     padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 500;
     border-radius: 20px;
     width: 100px;
     border: 1px solid #cccccc;
@@ -151,7 +155,7 @@ table{
     padding: 0;
 }
 .content-area .img img{
-    height: 105vh;
+    height: 110vh;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -165,4 +169,34 @@ table{
     font-weight: 400;
     text-align: center;
     padding: 2px;
+}
+/* Current Gpa */
+.current-gpa{
+    position: absolute;
+    top: 99%;
+    left: 45%;
+    transform: translate(-50%);
+    text-shadow: 0 2px 8px rgba(0, 0,0, 0.2);
+    color: white;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+.current-credit{
+    position: absolute;
+    top: 106%;
+    left: 45%;
+    transform: translate(-50%);
+    text-shadow: 0 2px 8px rgba(0, 0,0, 0.2);
+    color: white;
+    font-weight: 500;
+}
+.cur{
+    padding: 10px 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    width: 150px;
+    text-align: center;
 }

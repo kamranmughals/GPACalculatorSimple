@@ -158,7 +158,6 @@
                             <option value="3">3</option>
                             <option value="2">2</option>
                             <option value="1">1</option>
-                            <option value="1">1</option>
                             <option value="0">none</option>
                         </select>
                     </td>
@@ -194,6 +193,14 @@
             </tbody>
         </table>
     </form>
+    <div class="current-gpa">
+        <label for=""><span>Current GPA</span></label>
+        <input class="cur" type="text" id="cr-gpa" placeholder="Current GPA">
+    </div>
+    <div class="current-credit">
+        <label for=""><span>Credit Hour*</span></label>
+        <input class="cur" type="text" id="cr-cred" placeholder="Total CreditHour">
+    </div>
     <div class="button-area">
         <button id= "btn-cal" type="button">Calculate</button>
     </div>
@@ -207,8 +214,12 @@
         <input class="ans-area" id="cred" type="text" value="" name="sum3[]">
     </div>
     <div class="total-gpa">
-        <label class="head-area" for=""><span>Final GPA</span></label>
+        <label class="head-area" for=""><span>GPA Of Sem*</span></label>
         <input  class="ans-area" id="gpa" type="text" name="sum[]" value="">
+    </div>
+    <div class="total-gpa">
+        <label class="head-area" for=""><span>CGPA</span></label>
+        <input  class="ans-area" id="cgpa" type="text" name="sum4[]" value="">
     </div>
 </div>
 </div>

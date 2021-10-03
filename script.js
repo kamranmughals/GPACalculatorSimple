@@ -39,10 +39,14 @@ let credit_hour = document.getElementsByName("credit_hour[]");
  let sum = document.getElementsByName("sum[]");
  let sum2 = document.getElementsByName("sum2[]");
  let sum3 = document.getElementsByName("sum3[]");
+let sum4 = document.getElementsByName("sum4[]");
 // let gpa = document.getElementById("gpa")
 // let credit = document.getElementById("cred")
 // let add = document.getElementById("sum")
 let btn_cal = document.getElementById("btn-cal")
+// Current Gpa and Credit
+let Current_Gpa = document.getElementById("cr-gpa")
+let Current_Cred = document.getElementById("cr-cred")
 
 function mygrade(){
     // let gradelist = document.getElementById("grade-selector");
@@ -109,5 +113,14 @@ btn_cal.onclick = function(){
     // total number of credit hours
     for(i = 0; i < sum3.length; i++){
         sum3[i].value = total;
+    }
+    // Calculate Cummulative Grade Per Average
+    for(i = 0;i < sum4.length; i++){
+       let c_gpa = Current_Cred.value * Current_Gpa.value;
+       let new_gpa = gpa * sum3[i].value;
+       let addcred = parseFloat(Current_Cred.value) + parseFloat(sum3[i].value);
+       sum4[i].value = (c_gpa + new_gpa) / addcred;
+       let round = parseFloat(sum4[i].value).toFixed(2);
+       sum4[i].value = round;
     }
 }
