@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content-area">
+    <div class="container">
+        <div class="nav-bar">
+            <h2>GPA CALCULATOR</h2>
+            <p>(Managed by Kamran Ahsan)</p>
+        </div>
+    </div>
+    <div class="img">
+        <img src="./images/download.jpg" alt="">
+    </div>
+    <form action="" id="forrm">
+        <table>
+            <tbody>
+                <tr>
+                    <td class="heads title color">Grade</td>
+                    <td class="heads title color">Points</td>
+                    <td class="heads title color">Credit Hour</td>
+                    <td class="heads title color">Total Points</td>
+                </tr>
+                <tr>
+                    <td class="heads select" ><select  id="grade-selector[]" name="grade1[]" onchange="mygrade()">
+                            <option value="">Select</option>
+                            <option value="4.00">A+</option>
+                            <option value="3.70">A</option>
+                            <option value="3.40">B+</option>
+                            <option value="3.00">B</option>
+                            <option value="2.50">B-</option>
+                            <option value="2.00">C+</option>
+                            <option value="1.50">C</option>
+                            <option value="1.00">D</option>
+                            <option value="0.00">F</option>
+                        </select></td>
+                    <td class="heads"><input name="point1[]" type="text" value="" style="width: 75px"></td>
+                    <td class="heads select">
+                        <select id="credit-selector[]" name="credit1[]" onchange="mycal()">
+                            <option value="">Select</option>
+                            <option value="4">4</option>
+                            <option value="3">3</option>
+                            <option value="2">2</option>
+                            <option value="1">1</option>
+                            <option value="0">none</option>
+                        </select>
+                    </td>
+                    <td class="heads"><input name="points1[]" type="text" value="" style="width: 75px"></td>
+                </tr>
+                <!-- 2 -->
+                <tr>
+                    <td class="heads select"><select name="grade2[]" onchange="mygrade()">
+                            <option value="">Select</option>
+                            <option value="4.00">A+</option>
+                            <option value="3.70">A</option>
+                            <option value="3.40">B+</option>
+                            <option value="3.00">B</option>
+                            <option value="2.50">B-</option>
+                            <option value="2.00">C+</option>
+                            <option value="1.50">C</option>
+                            <option value="1.00">D</option>
+                            <option value="0.00">F</option>
+                        </select></td>
+                    <td class="heads" ><input name="point2[]" type="text" value="" style="width: 75px"></td>
+                    <td class="heads select">
+                        <select id="credit-selector[]" name="credit2[]" onchange="mycal()">
+                            <option value="">Select</option>
+                            <option value="4">4</option>
+                            <option value="3">3</option>
+                            <option value="2">2</option>
+                            <option value="1">1</option>
+                            <option value="0">none</option>
+                        </select>
+                    </td>
+                    <td class="heads"><input name="points2[]" type="text" value="" style="width: 75px"></td>
+                </tr>
+                <!-- 3 -->
+                <tr>
+                    <td class="heads select"><select name="grade3[]" onchange="mygrade()">
+                            <option value="">Select</option>
+                            <option value="4.00">A+</option>
+                            <option value="3.70">A</option>
+                            <option value="3.40">B+</option>
+                            <option value="3.00">B</option>
+                            <option value="2.50">B-</option>
+                            <option value="2.00">C+</option>
+                            <option value="1.50">C</option>
+                            <option value="1.00">D</option>
+                            <option value="0.00">F</option>
+                        </select></td>
+                    <td class="heads"><input name="point3[]" type="text" value="" style="width: 75px"></td>
+                    <td class="heads select">
+                        <select id="credit-selector" name="credit3[]" onchange="mycal()">
+                            <option value="">Select</option>
+                            <option value="4">4</option>
+                            <option value="3">3</option>
+                            <option value="2">2</option>
+                            <option value="1">1</option>
+                            <option value="0">none</option>
+                        </select>
+                    </td>
+                    <td class="heads"><input name="points3[]" type="text" value="" style="width: 75px"></td>
+                </tr>
+                <!-- 4 -->
+                <tr>
+                    <td class="heads select"><select name="grade4[]"onchange="mygrade()">
+                            <option value="">Select</option>
+                            <option value="4.00">A+</option>
+                            <option value="3.70">A</option>
+                            <option value="3.40">B+</option>
+                            <option value="3.00">B</option>
+                            <option value="2.50">B-</option>
+                            <option value="2.00">C+</option>
+                            <option value="1.50">C</option>
+                            <option value="1.00">D</option>
+                            <option value="0.00">F</option>
+                        </select></td>
+                    <td class="heads"><input name="point4[]" type="text" value="" style="width: 75px"></td>
+                    <td class="heads select">
+                        <select id="credit-selector" name="credit4[]" onchange="mycal()">
+                            <option value="">Select</option>
+                            <option value="4">4</option>
+                            <option value="3">3</option>
+                            <option value="2">2</option>
+                            <option value="1">1</option>
+                            <option value="0">none</option>
+                        </select>
+                    </td>
+                    <td class="heads"><input name="points4[]" type="text" value="" style="width: 75px"></td>
+                </tr>
+                <!-- 5 -->
+                <tr>
+                    <td class="heads select"><select name="grade5[]" onchange="mygrade()">
+                            <option value="">Select</option>
+                            <option value="4.00">A+</option>
+                            <option value="3.70">A</option>
+                            <option value="3.40">B+</option>
+                            <option value="3.00">B</option>
+                            <option value="2.50">B-</option>
+                            <option value="2.00">C+</option>
+                            <option value="1.50">C</option>
+                            <option value="1.00">D</option>
+                            <option value="0.00">F</option>
+                        </select></td>
+                    <td class="heads"><input name="point5[]" type="text" value="" style="width: 75px"></td>
+                    <td class="heads select">
+                        <select id="credit-selector" name="credit5[]" onchange="mycal()">
+                            <option value="">Select</option>
+                            <option value="4">4</option>
+                            <option value="3">3</option>
+                            <option value="2">2</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                            <option value="0">none</option>
+                        </select>
+                    </td>
+                    <td class="heads"><input name="points5[]" type="text" value="" style="width: 75px"></td>
+                </tr>
+                <!-- 6 -->
+                <tr>
+                    <td class="heads select"><select  name="grade6[]" onchange="mygrade()">
+                            <option value="">Select</option>
+                            <option value="4.00">A+</option>
+                            <option value="3.70">A</option>
+                            <option value="3.40">B+</option>
+                            <option value="3.00">B</option>
+                            <option value="2.50">B-</option>
+                            <option value="2.00">C+</option>
+                            <option value="1.50">C</option>
+                            <option value="1.00">D</option>
+                            <option value="0.00">F</option>
+                        </select></td>
+                    <td class="heads"><input name="point6[]" type="text" value="" style="width: 75px"></td>
+                    <td class="heads select" name = "credit_hour[]">
+                        <select id="credit-selector" name="credit6[]" onchange="mycal()">
+                            <option value="">Select</option>
+                            <option value="4">4</option>
+                            <option value="3">3</option>
+                            <option value="2">2</option>
+                            <option value="1">1</option>
+                            <option value="0">none</option>
+                        </select>
+                    </td>
+                    <td class="heads"><input name="points6[]" type="text" value="" style="width: 75px"></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <div class="button-area">
+        <button id= "btn-cal" type="button">Calculate</button>
+    </div>
+    <div class="content-btn">
+        <div class="total-gpa">
+            <label class="head-area" for=""><span>SUM*</span></label>
+            <input  class="ans-area" id="sum" type="text" value="" name="sum2[]">
+        </div>
+    <div class="total-gpa">
+        <label class="head-area" for=""><span>Credit Hours*</span></label>
+        <input class="ans-area" id="cred" type="text" value="" name="sum3[]">
+    </div>
+    <div class="total-gpa">
+        <label class="head-area" for=""><span>Final GPA</span></label>
+        <input  class="ans-area" id="gpa" type="text" name="sum[]" value="">
+    </div>
+</div>
+</div>
+
+</body>
+<footer class="footer-area">
+    <h6>&copy; Copyright 2021. All right reserved, Management team by Tech Refocus</h6>
+</footer>
+<script src="script.js"></script>
+
+</html>
